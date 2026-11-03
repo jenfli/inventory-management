@@ -6,6 +6,7 @@ export default {
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
   },
@@ -112,6 +113,18 @@ export default {
     onTimeDelivery: 'On-Time Delivery',
     itemsCount: '{count} items',
     quantity: 'Qty',
+    submittedOrders: {
+      title: 'Submitted Orders',
+      empty: 'No restocking orders have been submitted yet.',
+      loadError: 'Submitted orders could not be loaded.',
+      submittedDate: 'Submitted',
+      items: 'Items',
+      totalCost: 'Total Cost',
+      leadTime: 'Lead Time',
+      expectedDelivery: 'Expected Delivery',
+      status: 'Status',
+      days: '{count} days'
+    },
     table: {
       orderNumber: 'Order Number',
       orderId: 'Order ID',
@@ -167,6 +180,46 @@ export default {
     }
   },
 
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Plan a restocking order against a budget based on demand forecasts',
+    budget: 'Budget',
+    budgetSlider: 'Restocking budget',
+    selectedCost: 'Selected Cost',
+    remainingBudget: 'Remaining Budget',
+    overBudget: 'Selected items exceed the budget.',
+    noForecasts: 'No forecast items need restocking.',
+    includeItem: 'Include {sku} in order',
+    table: {
+      include: 'Include',
+      item: 'Item',
+      supplier: 'Supplier',
+      trend: 'Trend',
+      demand: 'Demand (current to forecast)',
+      unitCost: 'Unit Cost',
+      quantity: 'Quantity',
+      lineTotal: 'Line Total',
+      leadTime: 'Lead Time (days)'
+    },
+    totalCost: 'Total Cost',
+    orderLeadTime: 'Order Lead Time',
+    days: '{count} days',
+    placeOrder: 'Place Order',
+    placing: 'Placing order...',
+    orderFailed: 'Failed to place the order.',
+    loadFailed: 'Failed to load demand forecasts: ',
+    success: {
+      title: 'Order submitted',
+      orderNumber: 'Order Number',
+      total: 'Total Cost',
+      leadTime: 'Lead Time',
+      expectedDelivery: 'Expected Delivery',
+      viewOrders: 'View submitted orders',
+      newOrder: 'Plan another order'
+    }
+  },
+
   // Demand Forecast
   demand: {
     title: 'Demand Forecast',
@@ -204,6 +257,7 @@ export default {
     shipped: 'Shipped',
     processing: 'Processing',
     backordered: 'Backordered',
+    submitted: 'Submitted',
     inStock: 'In Stock',
     lowStock: 'Low Stock',
     adequate: 'Adequate'
